@@ -2,6 +2,7 @@ import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import trLocale from "date-fns/locale/tr";
 
 const BlogLayoutTwo = ({ blog }) => {
   return (
@@ -38,7 +39,9 @@ const BlogLayoutTwo = ({ blog }) => {
         </Link>
 
         <span className="inline-block w-full capitalize text-gray dark:text-light/50 font-semibold  text-xs sm:text-base">
-          {format(new Date(blog.publishedAt), "MMMM dd, yyyy")}
+          {format(new Date(blog.publishedAt), "MMMM dd, yyyy", { locale: trLocale })
+        }
+    
         </span>
       </div>
     </div>

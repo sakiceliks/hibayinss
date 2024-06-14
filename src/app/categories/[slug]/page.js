@@ -7,7 +7,7 @@ const slugger = new GithubSlugger();
 
 export async function generateStaticParams() {
   const categories = [];
-  const paths = [{ slug: "all" }];
+  const paths = [{ slug: "hepsi" }];
 
   allBlogs.map((blog) => {
     if (blog.isPublished) {
@@ -27,14 +27,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   return {
     title: `${params.slug.replaceAll("-"," ")} Blogs`,
-    description: `Learn more about ${params.slug === "all" ? "web development" : params.slug} through our collection of expert blogs and tutorials`,
+    description: `Learn more about ${params.slug === "hepsi" ? "epoksi zemin kaplama" : params.slug} through our collection of expert blogs and tutorials`,
   };
 }
 
 
 const CategoryPage = ({ params }) => {
 // Separating logic to create list of categories from all blogs
-const allCategories = ["all"]; // Initialize with 'all' category
+const allCategories = ["hepsi"]; // Initialize with 'all' category
 allBlogs.forEach(blog => {
   blog.tags.forEach(tag => {
     const slugified = slug(tag);
@@ -49,7 +49,7 @@ allCategories.sort();
 
 // Step 2: Filter blogs based on the current category (params.slug)
 const blogs = allBlogs.filter(blog => {
-  if (params.slug === "all") {
+  if (params.slug === "hepsi") {
     return true; // Include all blogs if 'all' category is selected
   }
   return blog.tags.some(tag => slug(tag) === params.slug);
@@ -59,9 +59,9 @@ const blogs = allBlogs.filter(blog => {
     <article className="mt-12 flex flex-col text-dark dark:text-light">
       <div className=" px-5 sm:px-10  md:px-24  sxl:px-32 flex flex-col">
         <h1 className="mt-6 font-semibold text-2xl md:text-4xl lg:text-5xl">#{params.slug}</h1>
-        <span className="mt-2 inline-block">
+        {/* <span className="mt-2 inline-block">
           Discover more categories and expand your knowledge!
-        </span>
+        </span> */}
       </div>
       <Categories categories={allCategories} currentSlug={params.slug} />
 
