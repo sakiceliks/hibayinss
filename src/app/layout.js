@@ -57,10 +57,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={cx(
+        className={ cx(
           inter.variable,
           manrope.variable,
-          "font-mr bg-light dark:bg-dark"
+          "font-mr bg-repeat bg-[url('../../public/bg.jpeg')] dark:bg-[url('../../public/bg-dark.webp')]"
         )}
       >
         <Script id="theme-switcher" strategy="beforeInteractive">

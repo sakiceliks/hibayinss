@@ -1,15 +1,15 @@
 // please update required information
 const siteMetadata = {
-    title: 'Next.js Blog With Tailwind CSS and Contentlayer',
-    author: 'CodeBucks',
-    headerTitle: 'Next.js Blog',
-    description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
-    language: 'en-us',
+    title: 'Epoksi Zemin Kaplama › Taş Halı Stone Carpet › Dekoratif Baskı Betonu',
+    author: 'Hibay Zemin',
+    headerTitle: 'Hibay Zemin',
+    description: 'Hibay Zemin, profesyonel zemin kaplama ve çözümleriyle mekanlarınıza değer katmaya hazır. Beton silimden epoksi kaplamalara, dekoratif zemin uygulamalarından daha fazlasına kadar geniş bir yelpazede hizmet sunuyoruz.',
+    language: 'tr-TR',
     theme: 'system', // system, dark or light
     siteUrl: 'https://hibayinsaat.vercel.app', // your website URL
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
-    email: 'codebucks27@gmail.com', 
+    email: 'hibayzemin@gmail.com', 
     github: 'https://github.com/codebucks27',
     twitter: 'https://twitter.com/code_bucks',
     facebook: 'https://facebook.com',
