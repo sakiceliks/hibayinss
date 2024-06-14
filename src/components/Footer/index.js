@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
 import { useForm } from "react-hook-form";
-
-import { DribbbleIcon, GithubIcon, WhatsappIcon,LinkedinIcon, TwitterIcon } from "../Icons";
 import Link from "next/link";
+import { DribbbleIcon, GithubIcon, WhatsappIcon,LinkedinIcon, TwitterIcon } from "../Icons";
 import siteMetadata from "@/src/utils/siteMetaData";
 
 const Footer = () => {
@@ -25,7 +24,7 @@ const Footer = () => {
 
     
       <div className="flex items-center mt-8">
-      <button href={siteMetadata.linkedin} rel="noopener noreferrer" className="bg-green-600 w-auto flex justify-center items-center py-2 px-4 gap-2  rounded-lg  text-center self-center my-2 mx-2 font-semibold text-white font-4  xl "><WhatsappIcon/> Whatsapp</button>
+      <Link target="_blank" href={siteMetadata.whatsapp} rel="noopener noreferrer" className="bg-green-600 w-auto flex justify-center items-center py-2 px-4 gap-2  rounded-lg  text-center self-center my-2 mx-2 font-semibold text-white font-4  xl "><WhatsappIcon/> Whatsapp</Link>
       </div>
 
       <div className="w-full  mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between">

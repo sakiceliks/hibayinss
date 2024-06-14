@@ -16,6 +16,7 @@ const siteMetadata = {
     youtube: 'https://youtube.com/codebucks',
     linkedin: 'https://www.linkedin.com/in/codebucks/',
     dribbble: 'https://www.dribbble.com',
+    whatsapp:'https://api.whatsapp.com/send?phone=905304554458',
     locale: 'tr-TR',
   }
   
