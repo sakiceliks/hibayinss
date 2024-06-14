@@ -6,7 +6,7 @@ import { allBlogs } from "contentlayer/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-
+import trLocale from "date-fns/locale/tr";
 export async function generateStaticParams() {
   return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
 }
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }) {
       description: blog.description,
       url: siteMetadata.siteUrl + blog.url,
       siteName: siteMetadata.title,
-      locale: "en_US",
+      locale: "tr_TR",
       type: "article",
       publishedTime: publishedAt,
       modifiedTime: modifiedAt,
